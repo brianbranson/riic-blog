@@ -1,7 +1,10 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
+div {
+  padding-bottom: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -15,13 +18,16 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 40px;/* 10vh; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: left;
+  /* text-align: left; */
+  justify-content: left;
+  font-size: 18pt;/* calc(10px + 2vmin); */
   color: white;
+  padding: 5px;
+  text-decoration: none;
 }
 
 .App-link {
@@ -35,4 +41,113 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.blog-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-collection-container {
+  flex-basis: 75%;
+}
+
+.blog-collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.blog-filter-container {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+/* .blog-filter {
+  flex-basis: 20%;
+} */
+
+.blog-card {
+  flex-basis: content;
+  height: 500px;
+  width: 23vw;
+  /* border: 1px solid #282c34; */
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 2px 2px 3px 3px lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+
+  .blog-card-title {
+    font-size: 16pt; /* calc(10px + 3vmin); */
+    padding: 5px;
+    margin: 0px;
+    border-bottom: 1px solid grey;
+    flex-basis: 10%;
+    background-color: ivory;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .blog-card-image {
+    text-align: center;
+    height: 100%;
+    flex-basis: 40%;
+    background-color: transparent;
+  }
+
+  .blog-card-text {
+    padding: 5px;
+    flex-basis: 40%;
+    background-color: rgb(241, 239, 239);
+    border-radius: 0px 0px 5px 5px;
+    border-top: 1px solid grey;
+  }
+  
+  .blog-card-details {
+    flex-basis: 10%;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+.blog-view-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.blog-view {
+  /* display: flex; */
+  width: 50%;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 10px;
+}
+  .blog-view h1 {
+    padding-top: 0px;
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+  }
+  .blog-view img {
+    display: block;
+    margin: 0 auto;
+  }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-size: 12pt;
+  padding: 6px 12px;
+  margin: 3px;
+  border-radius: 4px;
+}
+
+.pull-right {
+  float: right;
 }
